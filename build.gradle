@@ -13,6 +13,12 @@ java {
 	}
 }
 
+bootJar {
+    archiveBaseName = 'app'
+    archiveVersion = ''
+    archiveClassifier = ''
+}
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
