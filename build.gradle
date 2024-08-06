@@ -1,16 +1,26 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.2.8'
+	id 'org.springframework.boot' version '2.6.2'
 	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_1_8
 }
 
 group = 'yeseul'
 version = '0.0.1-SNAPSHOT'
 
-java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(17)
-	}
+// java {
+// 	toolchain {
+// 		languageVersion = JavaLanguageVersion.of(17)
+// 	}
+// }
+
+bootJar {
+    archiveBaseName = 'app'
+    archiveVersion = ''
+    archiveClassifier = ''
 }
 
 configurations {
